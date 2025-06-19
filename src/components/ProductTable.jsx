@@ -1,6 +1,8 @@
+import React from 'react';
+
 const ProductTable = ({ products, openModal }) => {
   return (
-    <div className="mt-4 bg-white shadow overflow-x-auto">
+    <div className="bg-white shadow overflow-x-auto">
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>

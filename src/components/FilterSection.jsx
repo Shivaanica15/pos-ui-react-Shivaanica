@@ -15,27 +15,39 @@ const FilterSection = ({ setFilters, resetFilters }) => {
   }, [search, category, color, thickness]);
 
   return (
-    <div className="bg-white p-4 shadow mt-4">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="bg-white p-4 rounded shadow mb-4">
+      <div className="flex flex-col md:flex-row gap-4">
         <input
           type="text"
           placeholder="Search Products"
-          className="border p-2 rounded"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          className="border p-2 rounded w-full md:w-1/3"
         />
-        <select className="border p-2 rounded" value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          className="border p-2 rounded w-full md:w-1/3"
+        >
           <option value="">Select Category</option>
           <option value="Electronics">Electronics</option>
           <option value="Accessories">Accessories</option>
         </select>
-        <select className="border p-2 rounded" value={color} onChange={(e) => setColor(e.target.value)}>
+        <select
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+          className="border p-2 rounded w-full md:w-1/3"
+        >
           <option value="">Select Color</option>
           <option value="Silver">Silver</option>
           <option value="Black">Black</option>
           <option value="White">White</option>
         </select>
-        <select className="border p-2 rounded" value={thickness} onChange={(e) => setThickness(e.target.value)}>
+        <select
+          value={thickness}
+          onChange={(e) => setThickness(e.target.value)}
+          className="border p-2 rounded w-full md:w-1/3"
+        >
           <option value="">Select Thickness</option>
           <option value="1.2cm">1.2cm</option>
           <option value="N/A">N/A</option>
