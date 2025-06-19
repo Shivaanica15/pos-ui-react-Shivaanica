@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 const FilterSection = ({ setFilters, resetFilters }) => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
